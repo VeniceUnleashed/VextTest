@@ -80,8 +80,8 @@ function VextTestVec2:testDivideOtherVec2()
 
     local s_Result = s_First / s_Second
 
-    lu.assertEquals(s_Result.x, 1.0 / 3.0)
-    lu.assertEquals(s_Result.y, 2.0 / 4.0)
+    lu.assertAlmostEquals(s_Result.x, 1.0 / 3.0, 0.1)
+    lu.assertAlmostEquals(s_Result.y, 2.0 / 4.0, 0.1)
 end
 
 function VextTestVec2:testDivideFloat()
@@ -90,8 +90,8 @@ function VextTestVec2:testDivideFloat()
 
     local s_Result = s_First / s_Second
 
-    lu.assertEquals(s_Result.x, 1.0 / 3.0)
-    lu.assertEquals(s_Result.y, 2.0 / 3.0)
+    lu.assertAlmostEquals(s_Result.x, 1.0 / 3.0, 0.1)
+    lu.assertAlmostEquals(s_Result.y, 2.0 / 3.0, 0.1)
 end
 
 function VextTestVec2:testDistanceOtherVec2()

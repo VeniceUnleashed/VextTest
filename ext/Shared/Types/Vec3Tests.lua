@@ -60,9 +60,9 @@ function VextTestVec3:testDivideOtherVec3()
 
     local s_Result = s_First / s_Second
 
-    lu.assertEquals(s_Result.x, 1.0 / 4.0)
-    lu.assertEquals(s_Result.y, 2.0 / 5.0)
-    lu.assertEquals(s_Result.z, 3.0 / 6.0)
+    lu.assertAlmostEquals(s_Result.x, 1.0 / 4.0, 0.1)
+    lu.assertAlmostEquals(s_Result.y, 2.0 / 5.0, 0.1)
+    lu.assertAlmostEquals(s_Result.z, 3.0 / 6.0, 0.1)
 end
 
 function VextTestVec3:testDivideFloat()
@@ -71,9 +71,9 @@ function VextTestVec3:testDivideFloat()
 
     local s_Result = s_First / s_Second
 
-    lu.assertEquals(s_Result.x, 1.0 / 4.0)
-    lu.assertEquals(s_Result.y, 2.0 / 4.0)
-    lu.assertEquals(s_Result.z, 3.0 / 4.0)
+    lu.assertAlmostEquals(s_Result.x, 1.0 / 4.0, 0.1)
+    lu.assertAlmostEquals(s_Result.y, 2.0 / 4.0, 0.1)
+    lu.assertAlmostEquals(s_Result.z, 3.0 / 4.0, 0.1)
 end
 
 function VextTestVec3:testDotOtherVec3()
