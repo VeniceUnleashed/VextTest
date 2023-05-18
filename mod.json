@@ -1,0 +1,13 @@
+{
+    "Name": "VextTest",
+    "Description": "A mod to test the VEXT API of Venice Unleashed",
+    "Version": "0.0.1",
+	"Authors": [],
+	"URL": "https://veniceunleashed.net",
+	"Tags": "vexttest",
+    "HasVeniceEXT": true,
+	"HasWebUI": false,
+    "Dependencies": {
+        "veniceext": "^1.0.0"
+    }
+}
